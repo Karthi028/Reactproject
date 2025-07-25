@@ -21,12 +21,14 @@ img{
     padding:10px;
     position: relative;
     background-color:white;
+    gap:5px;
 
    
 }
 
 .title{
     align-items: center;
+    font-weight:600;
 }
 
 #cart{

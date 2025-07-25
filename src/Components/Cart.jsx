@@ -27,7 +27,7 @@ const Cart = ({items,setitems,setcart}) => {
  const cartitems = items.map((item)=>{
         return <div key={item.id} style={{display:'flex',flexDirection:'row',justifyContent:'space-between',alignItems:'center',marginTop:'15px'}}>
           <img src={item.image} style={{width:'100px',height:'100px',marginLeft:'20px',borderRadius:'10px',padding:'5px',boxShadow:'1px 1px 5px grey'}} />
-          <p style={{overflowWrap:"break-word",whiteSpace:'normal',fontSize:'13px',marginLeft:'20px'}}>{item.title}</p>
+          <p style={{overflowWrap:"break-word",whiteSpace:'normal',fontSize:'15px',marginLeft:'20px'}}>{item.title}</p>
           <button style={{marginRight:'20px',marginLeft:'10px',padding:'3px'}} onClick={()=>{remover(item.id)}}>Remove</button>
         </div>
        });

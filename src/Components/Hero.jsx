@@ -18,12 +18,12 @@ const Hero = ({ cart, setcart }) => {
     }, [])
 
     let images = items.map((item) => {
-        return <div className='card' style={{ display: "flex", flexDirection: 'column', justifyContent: 'space-around',marginTop:'10px' }} key={item.id}>
+        return <div className='card' style={{ display: "flex", flexDirection: 'column', justifyContent: 'space-around',marginTop:'10px',marginBottom:'20px' }} key={item.id}>
 
             <img src={item.image} />
             <div className="price">
                 <p className="title">{item.title}</p>
-                <p>{item.price}</p>
+                <p style={{marginTop:'10px'}}>Price: {item.price}</p>
             </div>
             <button className="border" onClick={() => {
                 const findduplicate = cart.some((car) => car.id === item.id);
