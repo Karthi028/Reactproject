@@ -23,7 +23,7 @@ const Hero = ({ cart, setcart }) => {
             <img src={item.image} />
             <div className="price">
                 <p className="title">{item.title}</p>
-                <p style={{marginTop:'10px'}}>Price: {item.price}</p>
+                <p style={{marginTop:'10px'}}>${item.price}</p>
             </div>
             <button className="border" onClick={() => {
                 const findduplicate = cart.some((car) => car.id === item.id);
