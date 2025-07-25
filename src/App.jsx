@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import Hero from "./Components/Hero"
 import Topbar from "./Components/Topbar"
-import Cart from "./Components/Cart";
+import Cart from "./Components/Cart"
 import './app.css'
 
 const App = () => {
