@@ -1,5 +1,3 @@
-import "./cart.css";
-
 const Cart = ({items,setitems,setcart}) => {
 
   function remover(id){
